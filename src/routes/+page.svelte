@@ -1,0 +1,90 @@
+<script lang="ts">
+    import MaterialSymbol from "$lib/MaterialSymbol.svelte";
+</script>
+
+<div class="root">
+    <div class="circle">
+        <MaterialSymbol icon="check_circle" />
+    </div>
+
+    <div class="pill">
+        <MaterialSymbol icon="mood" fill />
+        <div>mood</div>
+    </div>
+
+    <div class="pill">
+        <MaterialSymbol icon="home" fill />
+        <div>home</div>
+    </div>
+    <div class="pill">
+        <MaterialSymbol icon="thumb_up" fill />
+        <div>Like</div>
+    </div>
+
+    <div class="rating">
+        <div class="starts">
+            <MaterialSymbol icon="star" fill />
+            <MaterialSymbol icon="star" fill />
+            <MaterialSymbol icon="star" fill />
+            <MaterialSymbol icon="star_half" fill />
+            <MaterialSymbol icon="star" />
+        </div>
+        <div class="label">3.5</div>
+    </div>
+</div>
+
+<style>
+    .root {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px;
+        font-family:
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            "Open Sans",
+            "Helvetica Neue",
+            sans-serif;
+    }
+    .circle {
+        background-color: red;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 24px;
+    }
+    .pill {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 500;
+        gap: 4px;
+        line-height: 1;
+        background-color: rgba(0 0 0/20%);
+        padding: 8px;
+        padding-right: 14px;
+        border-radius: 20px;
+    }
+    .rating {
+        display: flex;
+        gap: 4px;
+        font-size: 15px;
+        align-items: center;
+        line-height: 1;
+        & .starts {
+            display: flex;
+            gap: 0;
+        }
+    }
+</style>
