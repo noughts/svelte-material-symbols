@@ -1,5 +1,5 @@
 {
-	"name": "svelte-material-symbols",
+	"name": "@noughts/svelte-material-symbols",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
