@@ -32,10 +32,10 @@
     {/if}
 </svelte:head>
 
-<span style:opacity {style} class="material-symbols-rounded MaterialSymbol">{icon}</span>
+<span style:opacity {style} class="material-symbols-rounded root">{icon}</span>
 
 <style>
-    .MaterialSymbol {
+    .root {
         font-size: 1.3em;
         line-height: 1;
         overflow: hidden; /* 位置ズレ防止 */

@@ -7,6 +7,11 @@
         <MaterialSymbol icon="check_circle" />
     </div>
 
+    <div class="circle2">
+        <div class="circleBg"></div>
+        <MaterialSymbol icon="check_circle" />
+    </div>
+
     <div class="pill">
         <MaterialSymbol icon="mood" fill />
         <div>mood</div>
@@ -63,6 +68,24 @@
         height: 32px;
         border-radius: 50%;
         font-size: 24px;
+    }
+    .circle2 {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        font-size: 32px;
+        color: red;
+    }
+    .circleBg {
+        position: absolute;
+        inset: 0;
+        background-color: red;
+        opacity: 0.2;
     }
     .pill {
         display: flex;
