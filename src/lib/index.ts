@@ -1,1 +1,1 @@
-// Reexport your entry components here
+import MaterialSymbol from "./MaterialSymbol.svelte";
