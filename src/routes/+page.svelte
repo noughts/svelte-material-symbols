@@ -12,14 +12,24 @@
         <MaterialSymbol icon="check_circle" />
     </div>
 
+    <div class="simple">
+        <MaterialSymbol icon="mood" fill />
+        <span class="label">Label without Flexbox</span>
+    </div>
+
+    <div class="simple">
+        <MaterialSymbol icon="mood" fill />
+        <span class="label">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+
     <div class="pill">
         <MaterialSymbol icon="mood" fill />
-        <div>mood</div>
+        <div>Mood</div>
     </div>
 
     <div class="pill">
         <MaterialSymbol icon="home" fill />
-        <div>home</div>
+        <div>Home</div>
     </div>
     <div class="pill">
         <MaterialSymbol icon="thumb_up" fill />
@@ -43,6 +53,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 320px;
         gap: 16px;
         padding: 16px;
         font-family:
@@ -57,6 +68,9 @@
             "Open Sans",
             "Helvetica Neue",
             sans-serif;
+    }
+    .simple {
+        font-size: 22px;
     }
     .circle {
         background-color: red;

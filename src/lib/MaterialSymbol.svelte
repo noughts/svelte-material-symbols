@@ -36,9 +36,10 @@
 
 <style>
     .root {
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 1;
-        overflow: hidden; /* 位置ズレ防止 */
+        overflow: hidden;
+        vertical-align: -0.15em;
 
         /* レイアウトシフト防止 */
         width: 1em;
