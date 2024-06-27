@@ -1,1 +1,1 @@
-import { default as MaterialSymbol } from "./MaterialSymbol.svelte";
+export { default as MaterialSymbol } from "./MaterialSymbol.svelte";
