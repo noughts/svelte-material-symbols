@@ -4,12 +4,12 @@
 
 <div class="root">
     <div class="circle">
-        <MaterialSymbol icon="check_circle" />
+        <MaterialSymbol icon="check_circle" opacity={0.5} color="#ffffff" />
     </div>
 
     <div class="circle2">
         <div class="circleBg"></div>
-        <MaterialSymbol icon="check_circle" />
+        <MaterialSymbol icon="check_circle" color="red" />
     </div>
 
     <div class="simple">
