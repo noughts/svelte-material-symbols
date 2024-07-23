@@ -69,6 +69,12 @@
             "Helvetica Neue",
             sans-serif;
     }
+    @media (prefers-color-scheme: dark) {
+        .root {
+            background-color: #333;
+            color: white;
+        }
+    }
     .simple {
         font-size: 22px;
     }

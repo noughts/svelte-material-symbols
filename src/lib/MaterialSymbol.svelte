@@ -1,11 +1,29 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
     export let icon: string;
     export let fill: boolean = false;
     export let weight: number = 400; // 200 〜 700
     export let grade: -25 | 0 | 200 = 0;
     export let opticalSize: 20 | 24 | 40 | 48 = 24;
-    export let color = "#000000";
+    export let color: string = "#000000";
+    export let darkColor: string = "#ffffff"; // ダークモード時の色を追加
     export let opacity: number = 1;
+
+    let isDarkMode: boolean = false;
+
+    function updateDarkMode(e: MediaQueryListEvent) {
+        isDarkMode = e.matches;
+    }
+
+    onMount(() => {
+        const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        isDarkMode = darkModeQuery.matches;
+        darkModeQuery.addEventListener("change", updateDarkMode);
+        return () => {
+            darkModeQuery.removeEventListener("change", updateDarkMode);
+        };
+    });
 
     $: options = [
         weight == 400 ? undefined : `wght${weight}`,
@@ -23,7 +41,7 @@
     class="root"
     style:-webkit-mask-image="url({src})"
     style:mask-image="url({src})"
-    style:background-color={color}
+    style:background-color={isDarkMode ? darkColor : color}
     style:opacity
 />
 
