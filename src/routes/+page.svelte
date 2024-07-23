@@ -22,6 +22,11 @@
         <span class="label">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
     </div>
 
+    <div class="simple">
+        <MaterialSymbol icon="mood" fill color="green" />
+        <span class="label">I'm always green</span>
+    </div>
+
     <div class="pill">
         <MaterialSymbol icon="mood" fill />
         <div>Mood</div>

@@ -7,7 +7,7 @@
     export let grade: -25 | 0 | 200 = 0;
     export let opticalSize: 20 | 24 | 40 | 48 = 24;
     export let color: string = "#000000";
-    export let darkColor: string = "#ffffff"; // ダークモード時の色を追加
+    export let darkColor: string = color; // ダークモード時の色を追加
     export let opacity: number = 1;
 
     let isDarkMode: boolean = false;
