@@ -13,51 +13,62 @@
     </div>
 
     <div class="simple">
-        <MaterialSymbol icon="mood" fill />
+        <MaterialSymbol icon="mood" fill color="var(--text-color)" />
         <span class="label">Label without Flexbox</span>
     </div>
 
     <div class="simple">
-        <MaterialSymbol icon="mood" fill />
+        <MaterialSymbol icon="mood" fill color="var(--text-color)" />
         <span class="label">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
     </div>
 
     <div class="simple">
-        <MaterialSymbol icon="mood" fill color="green" />
+        <MaterialSymbol icon="mood" fill color="var(--key-color)" />
         <span class="label">I'm always green</span>
     </div>
 
     <div class="pill">
-        <MaterialSymbol icon="mood" fill />
+        <MaterialSymbol icon="mood" fill color="var(--text-color)" />
         <div>Mood</div>
     </div>
 
     <div class="pill">
-        <MaterialSymbol icon="home" fill />
+        <MaterialSymbol icon="home" fill color="var(--text-color)" />
         <div>Home</div>
     </div>
     <div class="pill">
-        <MaterialSymbol icon="thumb_up" fill />
+        <MaterialSymbol icon="thumb_up" fill color="var(--text-color)" />
         <div>Like</div>
     </div>
 
     <div class="rating">
         <div class="starts">
-            <MaterialSymbol icon="star" fill />
-            <MaterialSymbol icon="star" fill />
-            <MaterialSymbol icon="star" fill />
-            <MaterialSymbol icon="star_half" fill />
-            <MaterialSymbol icon="star" />
+            <MaterialSymbol icon="star" fill color="var(--text-color)" />
+            <MaterialSymbol icon="star" fill color="var(--text-color)" />
+            <MaterialSymbol icon="star" fill color="var(--text-color)" />
+            <MaterialSymbol icon="star_half" fill color="var(--text-color)" />
+            <MaterialSymbol icon="star" color="var(--text-color)" />
         </div>
         <div class="label">3.5</div>
     </div>
 </div>
 
 <style>
+    :root {
+        --text-color: #333333;
+        --key-color: green;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --text-color: #eeeeee;
+        }
+    }
     .root {
+        color-scheme: light dark;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        color: var(--text-color);
         width: 320px;
         gap: 16px;
         padding: 16px;
@@ -77,7 +88,6 @@
     @media (prefers-color-scheme: dark) {
         .root {
             background-color: #333;
-            color: white;
         }
     }
     .simple {
