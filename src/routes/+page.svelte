@@ -3,6 +3,8 @@
 </script>
 
 <div class="root">
+    <MaterialSymbol icon="check_circle" size={24} color="purple" />
+
     <div class="circle">
         <MaterialSymbol icon="check_circle" opacity={0.5} color="#ffffff" />
     </div>
@@ -125,7 +127,7 @@
     .pill {
         display: flex;
         align-items: center;
-        font-size: 24px;
+        font-size: 32px;
         font-weight: 500;
         gap: 4px;
         line-height: 1;
